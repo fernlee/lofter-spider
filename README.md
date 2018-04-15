@@ -48,4 +48,11 @@ scrapy crawl lofter
 
 
 
+爬好的文件基本可以直接用浏览器打开，有img前缀的代表主体为图片。可以使用以下命令移动到img文件夹中。
 
+```bash
+cd articles
+mkdir img
+mv \*img-\* img
+
+```  
