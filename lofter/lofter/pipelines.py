@@ -10,6 +10,6 @@ class LofterPipeline(object):
     def process_item(self, item, spider):
         title = item['title']
         content = item['content']
-        with open("articles/{}.txt".format(title), "wb") as f:
-            f.write(content.encode())
+        with open("articles/{}".format(title), "wb") as f:
+            f.write(content)
         return item

@@ -118,7 +118,6 @@ class UserAgentMiddleWare(object):
         request.headers.setdefault('User-agent', useragent)
         return
 
-
 # class ProxyMiddleware(object):
 #     """
 #     关于proxy, 可以安装scrapy-proxies,但是需要考虑网速

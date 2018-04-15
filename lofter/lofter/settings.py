@@ -66,6 +66,9 @@ COOKIES_ENABLED = False
 DOWNLOADER_MIDDLEWARES = {
    # 'lofter.middlewares.LofterDownloaderMiddleware': 543,
     'lofter.middlewares.UserAgentMiddleWare': 543,
+    # 'scrapy_first.middlewares.MyproxyMiddleware':200,
+    # 'scrapy_first.middlewares.RandomUserAgent':158,
+    # 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware':500,
 }
 
 # Enable or disable extensions
