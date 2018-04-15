@@ -36,7 +36,16 @@ scrapy crawl lofter
 3. 最终文章将保存在lofter/articles目录下
 
 
-注意： 因为网络问题可能会卡住，将url中的page参数修改为之前爬到的页数并保存，关掉进程重启即可。
+注意： 因为网络问题可能会卡住，将url中的page参数修改为之前爬到的页数并保存，关掉进程重启即可。重启时步骤如下：  
+
+```bash
+cd spider/lofter-spider/lofter/lofter     
+source .env/bin/activate   
+* 修改start_urls中的page参数    
+scrapy crawl lofter
+
+```  
+
 
 
 
