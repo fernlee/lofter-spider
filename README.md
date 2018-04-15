@@ -5,7 +5,7 @@
 
 ## 如何使用
 
-1. 修改 `lofter/lofter/spiders/article_spider.py`中的`start_urls`，更改成要爬取的第一个页面，
+1. 修改 `lofter/lofter/spiders/article_spider.py`中的`start_urls`，更改成要爬取的第一个页面，此处默认以榜单首页爬起，共50页，如果tag不多也可以按时间顺序全爬。
 
 如:
 
@@ -34,6 +34,9 @@ scrapy crawl lofter
 ```
 
 3. 最终文章将保存在lofter/articles目录下
+
+
+注意： 因为网络问题可能会卡住，将url中的page参数修改为之前爬到的页数并保存，关掉进程重启即可。
 
 
 
