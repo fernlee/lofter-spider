@@ -53,6 +53,6 @@ scrapy crawl lofter
 ```bash
 cd articles
 mkdir img
-mv \*img-\* img
+mv *img-* img
 
 ```  
