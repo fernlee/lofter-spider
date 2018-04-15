@@ -12,11 +12,10 @@
 ```python
 
 class LofterArticleSpider(Spider):
-    name = "lofter"
-
+    name = "lofter" # 此处{name}改成lofter的tag名，注意，中文可能会显示转码，不必担心
     start_urls = [
-        "http://{name}.lofter.com/?page=1" # 此处{name}改成你的名字
-    ]
+        "http://{name}.lofter.com/total?page=1" 
+    ]
 
 ```
 
